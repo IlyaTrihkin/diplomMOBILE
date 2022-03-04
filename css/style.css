@@ -510,7 +510,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 60px;
 }
 
@@ -540,18 +540,15 @@ main {
 .products {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .card__product {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: calc((100% - 130px) / 3);
-  height: 450px;
 }
 
 .card__product:not(:first-child) {
@@ -563,15 +560,13 @@ main {
 }
 
 .product-img {
+  display: block;
   width: 100%;
 }
 
 .card__product-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   border: 3px solid #b59f5b;
-  margin-top: -40px;
+  margin-top: -20px;
   padding: 55px 15px 20px 15px;
   flex-grow: 1;
 }
@@ -936,10 +931,6 @@ main {
     font-size: 18px;
   }
 
-  .products {
-    justify-content: flex-start;
-  }
-
   .card__product {
     width: calc(50% - 20px);
   }
@@ -1040,6 +1031,7 @@ main {
 
   .header__nav {
     order: 1;
+    align-self: flex-end;
   }
 
   .nav__item {
@@ -1052,8 +1044,8 @@ main {
     text-decoration: none;
     font-style: normal;
     color: #fff;
-    padding-left: 95%;
-    padding-bottom: 170px;
+
+    margin-bottom: 170px;
   }
 
   .header__logo {
@@ -1210,24 +1202,5 @@ main {
   .button__send {
     font-size: 12px;
   }  
-}
-
-
-
-
-/*
-
-
-body::after { 
-  content: "";
-  display: block;
-  width: 1660px;
-  height: 3207px;
-  background-image: url(../../NOEMI_Modern_ru.jpg);
-  position: absolute;
-  top: 0;
-  left: calc(50% - 830px);
-  opacity: 0.2;
-  z-index: 999;
 }
 
