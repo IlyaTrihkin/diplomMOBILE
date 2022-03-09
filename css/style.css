@@ -688,6 +688,7 @@ main {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .popup__close {
@@ -897,7 +898,7 @@ main {
   }
 
   main {
-    width: calc(100% - 330px);
+    width: calc(100% - 300px);
   }
 
   .page__aside {
@@ -1025,13 +1026,11 @@ main {
 
   .headder__top {
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
   }
 
   .header__nav {
     order: 1;
-    align-self: flex-end;
   }
 
   .nav__item {
@@ -1045,12 +1044,14 @@ main {
     font-style: normal;
     color: #fff;
 
-    margin-bottom: 170px;
+
   }
 
   .header__logo {
     width: 70vw;
     order: 2;
+    margin-top: 170px;
+    flex-grow: 1;
   }
 
   .header__intro {
@@ -1169,6 +1170,7 @@ main {
   }
   .popup__page {
     width: 300px;
+    height: 80vh;
   }
 
   .title__popup {
